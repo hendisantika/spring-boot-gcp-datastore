@@ -50,4 +50,9 @@ public class SpringBootGcpDatastoreApplication {
         List<Book> books = this.bookRepository.findByAuthorAndYear(author, year);
         return books.toString();
     }
+
+    @ShellMethod("Removes all books")
+    public void removeAllBooks() {
+        this.bookRepository.deleteAll();
+    }
 }
