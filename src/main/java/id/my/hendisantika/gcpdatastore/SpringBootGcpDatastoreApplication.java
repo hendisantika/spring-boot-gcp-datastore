@@ -1,10 +1,12 @@
 package id.my.hendisantika.gcpdatastore;
 
+import id.my.hendisantika.gcpdatastore.entity.Book;
 import id.my.hendisantika.gcpdatastore.repository.BookRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.shell.standard.ShellComponent;
+import org.springframework.shell.standard.ShellMethod;
 
 @ShellComponent
 @SpringBootApplication
@@ -16,5 +18,9 @@ public class SpringBootGcpDatastoreApplication {
         SpringApplication.run(SpringBootGcpDatastoreApplication.class, args);
     }
 
-
+    @ShellMethod("Saves a book to Cloud Datastore: save-book <title> <author> <year>")
+    public String saveBook(String title, String author, int year) {
+        Book savedBook = this.bookRepository.save(new Book(title, author, year));
+        return savedBook.toString();
+    }
 }
