@@ -38,4 +38,10 @@ public class SpringBootGcpDatastoreApplication {
         List<Book> books = this.bookRepository.findByAuthor(author);
         return books.toString();
     }
+
+    @ShellMethod("Loads books published after a given year: find-by-year-after <year>")
+    public String findByYearAfter(int year) {
+        List<Book> books = this.bookRepository.findByYearGreaterThan(year);
+        return books.toString();
+    }
 }
