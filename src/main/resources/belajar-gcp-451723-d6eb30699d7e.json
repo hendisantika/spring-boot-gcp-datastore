@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "belajar-gcp-451723",
+  "private_key_id": "d6eb30699d7eb68bda28143f2ffceaeb70c6624c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC9IG4YtUtRjlxz\nceMEXUHaHF0Joc12s48Q1W3agia5xAP9mnpRHQi8UX3DHGvy9ZyHBfyeASG6sgnH\nH86iJdNM4oN4plMEss6pUI6SzWmGrWloM80UVU13FgrfUpHIyUBBK/VYeiK0euCV\ns+9JnOIUodqnlSCoHNSFGYXcrOoH5fxHjTsoX0CVsIoxfcJ1szsyk4NnV9sPP/2J\nTKR1cz/+8mPKxbZDrCmrrF3f1nFqNkUD7FDCZkpwFd6jHX7jlGi2s4btlY8mREsa\nxEBihVDgjccB4c1o0K+cTa7cvTBBceaLMZwtbvlBFd6J6JOtTj5c5MUL3hSmP9k9\nxRXXssPPAgMBAAECggEAN/XCDdaK2DFe4pvWl8J+SyqsTr7M/CvqD4mPTSHIkpvQ\nsHfGbHzCSnJ0W0hsGoIZFAyt8BSWpdarNPuQ2QKHMI8vZoIUO2Yq5wdagE5+RGbI\nMxhsvHD3EF75zZVxZG9D72Sx3kGZRjy7eiA5E9dzP7aaa46hEI0jRtTD+oVBZB9i\naC9RvAo/HZkFNJ8LPY4cWTfzoyw7eLLCa+NuuJgRLh3rCft7bSeT065djAiufOEA\nP9d6pnts03K3VQTvhVmcD0obYBSBxHJPTRQkJ4TL55RI8XFdyYf/LGAnyJO7/D/Q\nLkZpj45jZQ5m5+8TYu/VnPKsVSI86LUIV0D1GBXnFQKBgQD0LhAaFPlNK0S8wUDf\n2k9+5PdENhTnfsPta2QjT7Dxt5UAyuUz2S+5JA9yOTNIAPf3qsoS4dPi3rODsUUr\nL3EHFWwYfyUYcj/Y/vutyYfnVMtclZC2TAe5jUDG9npurxcBExU0iH0gqA27yPff\nvneGIK313TXHClgxIWncS3Y/HQKBgQDGSCJFFByDuaEX9b4wz/Q3PvIoluwx3twd\n3Um7t2BJU2I0CTJ0Dq6DgqPXfkpBQKRNln+oIZ2P/+ofwIASxi0yr6xZayJEAmoW\nsfJQLz7IBMbMYg4TW6C04/ZjaT9WCayg9vAmAY4WoGNGH4K1gPi7q6bydasRfve3\nQzLDgtz+2wKBgG6UOaiGHQxMbvmIDwgRBnUx3aSfVUIszy/CtXukSD5+49STDc84\nKPuQEAqrSsTt413ek1qPuHQCZItcCTXwayBJHEXPto3ml3F+r51ZKdmiNeI8vWdA\n8TKffFleH73mPuW2raC3uurCEE4dSduiluBABmfUgNkdnyjIt/cSmX8lAoGAaclQ\nZ1R8hhbCiLr2VqqMG/F8VwV2TIEfJNvMG9eRCm3vRd3mSh8PImDPswfQ7BFl13NE\n9lnA63PY4EneyqVqtdEd/bL33BsBqMwVgIxETYim26Iw6kkHa5r3+D/Np8SPkm1M\n4KoRuaamcGIdZWLC0bWZ41+9/h6kYOT8L20hJOMCgYEAh7E9PNiEXjW1aYZrps6v\nM7otOtXr4KDGc9O71+XC9g78/RKrZXqx0P4QAeDHS61CvFA8FT5PikVLkvxzkoQj\nDNd7bnErpOLzqhxRtsg3iKwrBB/hsI153a6/bHLQFQW92dgpeNcmp+fSppTUz0C9\n8/QF1ZIObibwmtYbH557FRw=\n-----END PRIVATE KEY-----\n",
+  "client_email": "belajar-gcp-cloud-storage@belajar-gcp-451723.iam.gserviceaccount.com",
+  "client_id": "113737892597630234066",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/belajar-gcp-cloud-storage%40belajar-gcp-451723.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

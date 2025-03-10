@@ -21,6 +21,6 @@ public interface UserRepository extends DatastoreRepository<User, Long> {
 
     List<User> findByCountry(String country);
 
-    @Query("select * from |com.knf.dev.demo.entity.User| where name = @name")
+    @Query("select * from |id.my.hendisantika.gcpdatastore.entity.User| where name = @name")
     List<User> findByName(String name);
 }
