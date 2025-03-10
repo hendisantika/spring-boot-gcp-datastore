@@ -1,9 +1,14 @@
 package id.my.hendisantika.gcpdatastore.controller;
 
+import com.google.api.client.util.Lists;
+import id.my.hendisantika.gcpdatastore.entity.User;
 import id.my.hendisantika.gcpdatastore.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 /**
  * Created by IntelliJ IDEA.
@@ -22,4 +27,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
     private final UserRepository userRepository;
 
+    // get all users rest API
+    @GetMapping("/users")
+    public List<User> getAllUsers() {
+        return Lists.newArrayList(userRepository.findAll());
+    }
 }
