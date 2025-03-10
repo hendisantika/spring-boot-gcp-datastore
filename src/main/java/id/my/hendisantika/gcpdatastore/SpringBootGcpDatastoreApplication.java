@@ -44,4 +44,10 @@ public class SpringBootGcpDatastoreApplication {
         List<Book> books = this.bookRepository.findByYearGreaterThan(year);
         return books.toString();
     }
+
+    @ShellMethod("Loads books by author and year: find-by-author-year <author> <year>")
+    public String findByAuthorYear(String author, int year) {
+        List<Book> books = this.bookRepository.findByAuthorAndYear(author, year);
+        return books.toString();
+    }
 }
