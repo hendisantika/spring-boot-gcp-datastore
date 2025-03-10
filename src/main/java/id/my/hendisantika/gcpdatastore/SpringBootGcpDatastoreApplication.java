@@ -9,6 +9,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.shell.standard.ShellComponent;
 import org.springframework.shell.standard.ShellMethod;
 
+import java.util.List;
+
 @ShellComponent
 @SpringBootApplication
 @RequiredArgsConstructor
@@ -31,4 +33,9 @@ public class SpringBootGcpDatastoreApplication {
         return Lists.newArrayList(books).toString();
     }
 
+    @ShellMethod("Loads books by author: find-by-author <author>")
+    public String findByAuthor(String author) {
+        List<Book> books = this.bookRepository.findByAuthor(author);
+        return books.toString();
+    }
 }
