@@ -1,5 +1,6 @@
 package id.my.hendisantika.gcpdatastore;
 
+import com.google.common.collect.Lists;
 import id.my.hendisantika.gcpdatastore.entity.Book;
 import id.my.hendisantika.gcpdatastore.repository.BookRepository;
 import lombok.RequiredArgsConstructor;
@@ -23,4 +24,11 @@ public class SpringBootGcpDatastoreApplication {
         Book savedBook = this.bookRepository.save(new Book(title, author, year));
         return savedBook.toString();
     }
+
+    @ShellMethod("Loads all books")
+    public String findAllBooks() {
+        Iterable<Book> books = this.bookRepository.findAll();
+        return Lists.newArrayList(books).toString();
+    }
+
 }
