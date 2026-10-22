@@ -7,7 +7,46 @@ updates:
       time: '05:00'
       timezone: Asia/Jakarta
     open-pull-requests-limit: 10
-  - package-ecosystem: "github-actions"
+    labels:
+      - dependencies
+      - java
+    commit-message:
+      prefix: "build(deps)"
+      include: scope
+    groups:
+      spring-boot:
+        patterns:
+          - "org.springframework.boot:*"
+      spring-cloud:
+        patterns:
+          - "org.springframework.cloud:*"
+      spring-cloud-gcp:
+        patterns:
+          - "com.google.cloud:spring-cloud-gcp*"
+      spring-shell:
+        patterns:
+          - "org.springframework.shell:*"
+      maven-plugins:
+        patterns:
+          - "org.apache.maven.plugins:*"
+      minor-and-patch:
+        update-types:
+          - minor
+          - patch
+
+  - package-ecosystem: github-actions
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: daily
+      time: '05:00'
+      timezone: Asia/Jakarta
+    open-pull-requests-limit: 5
+    labels:
+      - dependencies
+      - github_actions
+    commit-message:
+      prefix: "ci(deps)"
+    groups:
+      github-actions:
+        patterns:
+          - "*"
